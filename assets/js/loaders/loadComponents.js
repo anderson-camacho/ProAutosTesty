@@ -14,19 +14,19 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("header-container").innerHTML = data;
         });
 
-        // Cargar el carrusel
+    // Cargar el carrusel
     fetch("generalHtml/carruselPrincipal.html")
-    .then((response) => response.text())
-    .then((data) => {
-        document.getElementById("carousel-slides-principal").innerHTML = data;
-    });
+        .then((response) => response.text())
+        .then((data) => {
+            document.getElementById("carousel-slides-principal").innerHTML = data;
+        });
 
-            // Cargar el pie de página
+    // Cargar el pie de página
     fetch("generalHtml/serviceSection.html")
-    .then((response) => response.text())
-    .then((data) => {
-        document.getElementById("servicios-container").innerHTML = data;
-    });
+        .then((response) => response.text())
+        .then((data) => {
+            document.getElementById("servicios-container").innerHTML = data;
+        });
 
     // Cargar el pie de página
     fetch("generalHtml/footer.html")
@@ -42,17 +42,17 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("venta-vehiculos-container").innerHTML = data;
         });
 
-        // Cargar la sección contactame
+    // Cargar la sección contactame
     fetch("generalHtml/contactForm.html")
-    .then((response) => response.text())
-    .then((data) => {
-        document.getElementById("contact-form-container").innerHTML = data;
-    });
-    
-     // Cargar la sección contactame
-     fetch("generalHtml/whatsappBotton.html")
-     .then((response) => response.text())
-     .then((data) => {
-         document.getElementById("whatsapp-botton-container").innerHTML = data;
-     });
+        .then((response) => response.text())
+        .then((data) => {
+            document.getElementById("contact-form-container").innerHTML = data;
+        });
+
+    // Cargar la sección contactame
+    fetch("generalHtml/whatsappBotton.html")
+        .then((response) => response.text())
+        .then((data) => {
+            document.getElementById("whatsapp-botton-container").innerHTML = data;
+        });
 });
